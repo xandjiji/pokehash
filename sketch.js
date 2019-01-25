@@ -144,13 +144,19 @@ function draw() {
 	// DINHEIRO
 	text("MONEY: $" + trainercard.money, 45, 170);
 	// POKEDEX
-	text("POKEDEX: " + trainercard.pokedex, 45, 202);
+	text("POKEDéX: " + trainercard.pokedex, 45, 202);
 
 	// desenhando insigneas
 	let horizontal = 52;
 	let offset = 48;
+	let regionoffset = 0;
+	if(trainercard.region == "Johto"){
+		regionoffset = 8;
+	}else{
+		regionoffset = 0;
+	}
 	for(j = 0; j < trainercard.badges; j++){
-		image(badge[j], horizontal + (j*offset), 380);
+		image(badge[j+regionoffset], horizontal + (j*offset), 380);
 	}
 
 }
