@@ -144,7 +144,7 @@ function draw() {
 	// DINHEIRO
 	text("MONEY: $" + trainercard.money, 45, 170);
 	// POKEDEX
-	text("POKEDEX: " + trainercard.pokedex, 45, 202);
+	text("POKEDéX: " + trainercard.pokedex, 45, 202);
 
 	// desenhando insigneas
 	let horizontal = 52;
