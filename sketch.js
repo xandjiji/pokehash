@@ -58,22 +58,22 @@ function preload() {
 
 	// carregando treinadores
 	for (i = 0; i < 107; i++){
-		trainer[i] = loadImage('trainers/(' + (i+1) + ').png');
+		trainer[i] = loadImage('trainers/trainer' + i + '.png');
 	}
 
 	// carregando pokemons
 	for (i = 0; i < 252; i++){
-		pokemon[i] = loadImage('pokemons/(' + (i+1) + ').png')
+		pokemon[i] = loadImage('pokemons/pokemon' + i + '.png')
 	}
 
 	// carregando insigneas (kanto)
 	for(i = 0; i < 8; i++){
-		badge[i] = loadImage('badges/kanto/(' + (i+1) + ').png');
+		badge[i] = loadImage('badges/kanto/kanto' + i + '.png');
 	}
 
 	// carregando insigneas (johto)
 	for(i = 8; i < 16; i++){
-		badge[i] = loadImage('badges/johto/(' + (i+1) + ').png');
+		badge[i] = loadImage('badges/johto/johto' + i + '.png');
 	}
 
 	// carregando fonte
