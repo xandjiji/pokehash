@@ -34,7 +34,7 @@ var cities = [
 	'Goldenrod City',
 	'Pewter City',
 	'Mahogany Town',
-	'Safron City',
+	'Saffron City',
 	'New Bark Town',
 	'Vermilion City',
 	'Olivine City',
