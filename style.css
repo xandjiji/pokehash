@@ -1,0 +1,63 @@
+@font-face {
+     font-family: 'pokedexFont';
+     src: URL('pokedex.ttf') format('truetype');
+}
+
+p {
+     font-family: "pokedexFont";
+}
+
+input[type="text"] {
+     font-family: "pokedexFont";
+     font-size: 16px;
+     text-align: center;
+     text-decoration: none;
+
+     width:170px;
+     padding: 4px 0px;
+     border: none;
+
+     background-color: #9d95d0;
+     color: white;
+}
+
+body {
+     display: flex;
+     flex-flow: column;
+     align-items: center;
+
+}
+
+button {
+     font-family: "pokedexFont";
+     font-size: 16px;
+
+     margin-top: 8px;
+     width: 170px;
+     padding: 4px 0px;
+     border: none;
+
+     background-color: #9d95d0;
+     color: white;
+}
+button:hover {
+     background-color: #493e8e;
+     color: white;
+}
+
+a:link {
+     color: #9d95d0;
+     text-decoration: none;
+}
+a:visited {
+     color: #9d95d0;
+     text-decoration: none;
+}
+a:hover {
+     color: #493e8e;
+     text-decoration: none;
+}
+a:active {
+     color: #483d8b;
+     text-decoration: none;
+}

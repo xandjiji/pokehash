@@ -80,7 +80,7 @@ function preload() {
 	}
 
 	// carregando fonte
-	myFont = loadFont("Pokedex.ttf");
+	myFont = loadFont("pokedex.ttf");
 
 }
 
@@ -95,9 +95,9 @@ let offsetW = 84;
 let offsetH = 68;
 
 let size = 16;
-
-// input
 let input;
+let texto;
+let botao;
 
 function setup() {
 
@@ -106,12 +106,21 @@ function setup() {
 
 	// inicializando tela
 	var cnv = createCanvas(canvasW, canvasH);
-	cnv.center('horizontal');
+
+	// inicializando texto
+	texto = createElement('p', 'Trainer Name:');
+	texto.style('color', color(255));
 
 	// inicializando caixa de texto (input)
 	input = createInput();
-	input.position(432, 450);
-	input.center('horizontal');
+
+	// inicializando botao
+	botao = createButton('save');
+	botao.mouseClicked(download);
+
+	// escolhendo fontes
+	textFont(myFont);
+	textSize(size);
 
 }
 
@@ -130,10 +139,6 @@ function draw() {
 	image(pokemon[trainercard.pokemon4], pokegridW,				pokegridH + (offsetH));
 	image(pokemon[trainercard.pokemon5], pokegridW + (offsetW),		pokegridH + (offsetH));
 	image(pokemon[trainercard.pokemon6], pokegridW + (offsetW*2),	pokegridH + (offsetH));
-
-	// escolhendo fontes
-	textFont(myFont);
-	textSize(size);
 
 	// ID
 	text("IDNo. " + trainercard.id, 263, 42);
@@ -287,4 +292,8 @@ var sha256 = function sha256(ascii) {
 // chama CreateTrainer(input) toda vez que o teclado eh acionado
 function keyReleased() {
 	CreateTrainer(input.value());
+}
+
+function download() {
+	saveCanvas('trainercard', 'png');
 }
