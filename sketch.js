@@ -170,19 +170,19 @@ function CreateTrainer(name) {
 	var hash = sha256(name);
 
 	trainercard.name		= name;
-	trainercard.region		= regions[(parseInt('0x' + hash.substring(0, 4)) % 2)];
-	trainercard.hometown	= cities[(parseInt('0x' + hash.substring(0, 4)) % 20)];
-	trainercard.money		= (parseInt('0x' + hash.substring(5, 9)));
-	trainercard.pokedex		= (parseInt('0x' + hash.substring(10, 14)) % 252);
-	trainercard.badges		= (parseInt('0x' + hash.substring(15, 19)) % 9);
-	trainercard.trainer		= (parseInt('0x' + hash.substring(20, 24)) % 107);
-	trainercard.pokemon1	= (parseInt('0x' + hash.substring(25, 29)) % 252);
-	trainercard.pokemon2	= (parseInt('0x' + hash.substring(30, 34)) % 252);
-	trainercard.pokemon3	= (parseInt('0x' + hash.substring(35, 39)) % 252);
-	trainercard.pokemon4	= (parseInt('0x' + hash.substring(40, 44)) % 252);
-	trainercard.pokemon5	= (parseInt('0x' + hash.substring(45, 49)) % 252);
-	trainercard.pokemon6	= (parseInt('0x' + hash.substring(50, 54)) % 252);
-	trainercard.id 		= (parseInt('0x' + hash.substring(55, 59)));
+	trainercard.region		= regions[	(parseInt('0x' + hash.substring(0, 4)) % 2)];
+	trainercard.hometown	= cities[		(parseInt('0x' + hash.substring(0, 4)) % 20)];
+	trainercard.money		= 			(parseInt('0x' + hash.substring(5, 9)));
+	trainercard.pokedex		= 			(parseInt('0x' + hash.substring(10, 14)) % 252);
+	trainercard.badges		= 			(parseInt('0x' + hash.substring(15, 19)) % 9);
+	trainercard.trainer		= 			(parseInt('0x' + hash.substring(20, 24)) % 107);
+	trainercard.pokemon1	= 			(parseInt('0x' + hash.substring(25, 29)) % 252);
+	trainercard.pokemon2	= 			(parseInt('0x' + hash.substring(30, 34)) % 252);
+	trainercard.pokemon3	= 			(parseInt('0x' + hash.substring(35, 39)) % 252);
+	trainercard.pokemon4	= 			(parseInt('0x' + hash.substring(40, 44)) % 252);
+	trainercard.pokemon5	= 			(parseInt('0x' + hash.substring(45, 49)) % 252);
+	trainercard.pokemon6	= 			(parseInt('0x' + hash.substring(50, 54)) % 252);
+	trainercard.id 		= 			(parseInt('0x' + hash.substring(55, 59)));
 
 	return trainercard;
 }
