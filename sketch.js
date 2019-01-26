@@ -174,7 +174,7 @@ function CreateTrainer(name) {
 	trainercard.hometown	= cities[(parseInt('0x' + hash.substring(0, 4)) % 20)];
 	trainercard.money		= (parseInt('0x' + hash.substring(5, 9)) % 1000000);
 	trainercard.pokedex		= (parseInt('0x' + hash.substring(10, 14)) % 252);
-	trainercard.badges		= (parseInt('0x' + hash.substring(15, 19)) % 8);
+	trainercard.badges		= (parseInt('0x' + hash.substring(15, 19)) % 9);
 	trainercard.trainer		= (parseInt('0x' + hash.substring(20, 24)) % 107);
 	trainercard.pokemon1	= (parseInt('0x' + hash.substring(25, 29)) % 252);
 	trainercard.pokemon2	= (parseInt('0x' + hash.substring(30, 34)) % 252);
