@@ -57,26 +57,23 @@ function preload() {
 	card	= loadImage('card.png');
 
 	// carregando treinadores
-	for (m = 0; m < 107; m++){
-		p = m+1;
-		trainer[m] = loadImage('trainers/(' + p + ').png');
+	for (i = 0; i < 107; i++){
+		trainer[i] = loadImage('trainers/(' + (i+1) + ').png');
 	}
 
 	// carregando pokemons
-	for (n = 0; n < 252; n++){
-		pokemon[n] = loadImage('pokemons/(' + n + ').png')
+	for (i = 0; i < 252; i++){
+		pokemon[i] = loadImage('pokemons/(' + (i+1) + ').png')
 	}
 
 	// carregando insigneas (kanto)
-	for(k = 0; k < 8; k++){
-		y = k+1;
-		badge[k] = loadImage('badges/kanto/(' + y + ').png');
+	for(i = 0; i < 8; i++){
+		badge[i] = loadImage('badges/kanto/(' + (i+1) + ').png');
 	}
 
 	// carregando insigneas (johto)
-	for(k = 8; k < 16; k++){
-		y = k-7;
-		badge[k] = loadImage('badges/johto/(' + y + ').png');
+	for(i = 8; i < 16; i++){
+		badge[i] = loadImage('badges/johto/(' + (i+1) + ').png');
 	}
 
 	// carregando fonte
@@ -174,11 +171,11 @@ function CreateTrainer(name) {
 
 	trainercard.name		= name;
 	trainercard.region		= regions[(parseInt('0x' + hash.substring(0, 4)) % 2)];
-	trainercard.hometown	= cities[(parseInt('0x' + hash.substring(0, 4)) % 10)];
+	trainercard.hometown	= cities[(parseInt('0x' + hash.substring(0, 4)) % 20)];
 	trainercard.money		= (parseInt('0x' + hash.substring(5, 9)) % 1000000);
 	trainercard.pokedex		= (parseInt('0x' + hash.substring(10, 14)) % 252);
-	trainercard.badges		= (parseInt('0x' + hash.substring(15, 19)) % 8) + 1;
-	trainercard.trainer		= (parseInt('0x' + hash.substring(20, 24)) % 106);
+	trainercard.badges		= (parseInt('0x' + hash.substring(15, 19)) % 8);
+	trainercard.trainer		= (parseInt('0x' + hash.substring(20, 24)) % 107);
 	trainercard.pokemon1	= (parseInt('0x' + hash.substring(25, 29)) % 252);
 	trainercard.pokemon2	= (parseInt('0x' + hash.substring(30, 34)) % 252);
 	trainercard.pokemon3	= (parseInt('0x' + hash.substring(35, 39)) % 252);
