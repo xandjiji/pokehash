@@ -113,6 +113,7 @@ function setup() {
 
 	// inicializando caixa de texto (input)
 	input = createInput();
+	input.value('');
 
 	// inicializando botao
 	botao = createButton('save');
