@@ -143,7 +143,7 @@ function draw() {
 	// NOME
 	text("NAME: " + trainercard.name, 45, 84);
 	// ORIGEM
-	text(trainercard.hometown + " (" + trainercard.region + ")", 45, 138); //
+	text(trainercard.hometown + "  (" + trainercard.region + ")", 45, 138); //
 	// DINHEIRO
 	text("MONEY: $" + trainercard.money, 45, 170);
 	// POKEDEX
