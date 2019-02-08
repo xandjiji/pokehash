@@ -6,6 +6,8 @@ https://github.com/xandjiji/pokehash-twitter-bot
 You can play with the application here:
 https://xandjiji.github.io/pokehash/
 
+![trainercard](https://i.imgur.com/uYGMXw8.png)
+
 ### Installation
 
   - You need the [p5.js](https://p5js.org/) library to create the trainer card images (already included)
