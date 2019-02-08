@@ -1,11 +1,9 @@
 # pokehash
 
 This is the web application version of the pokehash trainer card generator. If you are looking for the twitter bot:
-
 https://github.com/xandjiji/pokehash-twitter-bot
 
 You can play with the application here:
-
 https://xandjiji.github.io/pokehash/
 
 ### Installation
