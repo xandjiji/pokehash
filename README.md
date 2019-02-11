@@ -6,7 +6,9 @@ https://github.com/xandjiji/pokehash-twitter-bot
 You can play with the application here:
 https://xandjiji.github.io/pokehash/
 
-![trainercard](https://i.imgur.com/uYGMXw8.png)
+<p align="center">
+  <img src="https://i.imgur.com/uYGMXw8.png">
+</p>
 
 ### Installation
 
